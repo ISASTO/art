@@ -143,6 +143,49 @@ a:hover{ text-decoration: underline; }
   margin-bottom: 14px;
 }
 
+.sitebar{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.nav{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.brand{
+  display:flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand a{
+  color: var(--text);
+  text-decoration: none;
+}
+
+.brand a:hover{
+  text-decoration: underline;
+}
+
+.nav a{
+  color: var(--text);
+  opacity: 0.88;
+  text-decoration: none;
+}
+
+.nav a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+
+
 .h1{
   font-size: 22px;
   font-weight: 600;
