@@ -1,1 +1,40 @@
-blah
+<!DOCTYPE html>
+<html lang="en" data-theme="github-dark">
+<head>
+  <meta charset="UTF-8">
+  <title>Comic Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <script defer src="../theme.js"></script>
+  <script defer src="./viewer.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <p><a href="./index.html">← Comics</a></p>
+    <h1 id="comicTitle">Loading…</h1>
+    <p id="pageMeta" class="muted"></p>
+  </header>
+
+  <main class="viewer">
+    <div class="toolbar">
+      <div class="nav-buttons" id="navButtons">
+        <button id="prevBtn">← Previous</button>
+        <button id="nextBtn">Next →</button>
+      </div>
+      <a id="downloadLink" class="download-link" href="#" download>Download image</a>
+    </div>
+
+    <div class="page-viewer">
+      <img id="pageImg" src="" alt="comic page">
+    </div>
+
+    <section id="extras" class="extras" style="display:none;">
+      <hr>
+      <div id="fragmentsSection"></div>
+      <div id="softPaywall">
+        <p>This took a long time to make. If you enjoyed, consider sending some USD.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
